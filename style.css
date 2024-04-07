@@ -55,7 +55,7 @@ html{
     font-weight: 500;
     padding: 12px 20px;
     background: #efefef;
-    border: none;
+    border-color: var(--text-color-third) ;
     border-radius: 10px;
     cursor: pointer;
     transition: .4s;
@@ -95,14 +95,17 @@ nav{
     transition: .3s;
     z-index: 100;
 }
+
 .nav-logo{
    position: relative;
 }
+
 .nav-name{
     font-size: 30px;
     font-weight: 600;
     color: var(--text-color-third);
 }
+
 .nav-logo span{
     position: absolute;
     top: -15px;
@@ -110,13 +113,16 @@ nav{
     font-size: 5em;
     color: var(--text-color-second);
 }
+
 .nav-menu, .nav_menu_list{
     display: flex;
 }
+
 .nav-menu .nav_list{
     list-style: none;
     position: relative;
 }
+
 .nav-link{
     text-decoration: none;
     color: var(--text-color-second);
@@ -124,12 +130,18 @@ nav{
     padding-inline: 15px;
     margin-inline: 20px;
 }
+
 .nav-menu-btn{
     display: none;
 }
+
 .nav-menu-btn i{
     font-size: 28px;
     cursor: pointer;
+}
+
+.nav-link:hover {
+    color: var(--first-color);
 }
 .active-link{
     position: relative;
@@ -233,9 +245,9 @@ nav{
         border-radius: 45% 55% 45% 55%;
     }
 }
-.scroll-btn{
+.scroll-btn {
    position: absolute;
-   bottom: 0;
+   bottom: 10px;
    left: 50%;
    translate: -50%;
    display: flex;
@@ -250,8 +262,13 @@ nav{
    border-radius: 30px;
    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
 }
-.scroll-btn i{
+
+.scroll-btn i {
     font-size: 20px;
+}
+.scroll-btn:hover {
+    color: var(--color-white);
+    background-color: var(--text-color-second);
 }
 
 /* ----- MAIN BOX ----- */
