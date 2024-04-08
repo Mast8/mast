@@ -14,6 +14,17 @@ function closeHamburger () {
     menuBtn.className = "nav-menu";
 }
 
+/* handle hamburger click */
+
+ (function () {
+  
+  document.querySelector(".theme-btn").addEventListener("click", () => {
+      document.body.classList.toggle("light-mode");
+  })
+})(); 
+
+
+
 /* ----- ADD SHADOW ON NAVIGATION BAR WHILE SCROLLING ----- */
   window.onscroll = function() {headerShadow()};
 
