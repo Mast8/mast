@@ -29,9 +29,9 @@
 /*  ligth mode*/
 
 .light-mode {
-    --body-color: #FFFFFF;
-    --color-white: #1e7bb1;
-
+    --body-color: #6c7983;
+    --color-white: rgb(255, 255, 255);
+    --first-color-hover: #f8f8f8;
 
     --color-black: #000;
     --color-grey0: #f8f8f8;
@@ -44,7 +44,7 @@
   }
 
   .theme-btn {
-    top: 5%;
+
     right: 3%;
     width: 70px;
     height: 70px;
@@ -56,7 +56,10 @@
     justify-content: center;
     align-items: center;
     box-shadow: 0 3px 15px rgba(0, 0, 0, 0.3);
-    transition: all 0.1s ease-in-out;
+  }
+
+  .theme-btn:hover {
+    background-color: var(--first-color-hover);
   }
 
 /* ----- SMOOTH SCROLL ----- */
