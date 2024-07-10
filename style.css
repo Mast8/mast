@@ -184,6 +184,7 @@ nav{
     color: var(--first-color);
     transition: .3;
 }
+
 .active-link::after{
     content: '';
     position: absolute;
